@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="outerWrapper">
+        <header class="header-section">
+            <a href="index.html"><img src="images/png/logo-no-background.png" alt=""></a>
+            <div class="header-items">
+                <ul>
+                    <li><a class="active" href="index.html">Accueil</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="ateliers.html">Ateliers</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="landing">
+            <video muted loop autoplay>
+                <source src="videos/home_vid.mp4" type="video/mp4">
+            </video>
+            <div class="landing-content">
+                <h1>MUCEM</h1>
+                <p>MUSÉE NATIONAL DES POTERIES</p>
+            </div>
+        </div>
+        <div class="welcome">
+            <h2>BIENVENUE AU MUCEM</h2>
+            <p>Il existe de nombreuses bonnes raisons de visiter le Louvre ! Que d'œuvres d'art à découvrir dans ce
+                fabuleux musée qui était autrefois un fort ! Planifiez donc votre visite à l’avance pour en profiter au
+                maximum.</p>
+        </div>
+
+        <div id="parallax" class="mesum-bg"></div>
+
+        <section class="gallery">
+            <div class="gallery-container">
+                <h2 class="title">PLONGEZ DANS LE MUCEM</h2>
+                <div class="photo-gallery">
+                    <div class="column">
+                        <div class="photo" id="img1"><img src="images/galerie1.jpg" alt=""></div>
+                        <div class="photo" id="img2"><img src="images/galerie2.jpg" alt=""></div>
+                        <div class="photo" id="img3"><img src="images/galerie3.jpg" alt=""></div>
+                    </div>
+                    <div class="column">
+                        <div class="photo" id="img4"><img src="images/galerie4.jpg" alt=""></div>
+                        <div class="photo" id="img5"><img src="images/galerie5.jpg" alt=""></div>
+                    </div>
+                    <div class="column">
+                        <div class="photo" id="img6"><img src="images/galerie7.jpg" alt=""></div>
+                        <div class="photo" id="img7"><img src="images/galerie6.jpg" alt=""></div>
+                        <div class="photo" id="img8"><img src="images/galerie8.jpg" alt=""></div>
+                    </div>
+                </div>
+                <hr class="line">
+                <h2 class="title2">Découvrez nos artristes</h2>
+            </div>
+        </section>
+
+        <section class="carousel-container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <input type="radio" name="slider" id="item-5">
+            <div class="cards">
+                <label for="item-1" class="card" id="photo-1">
+                    <img src="images/artist1.png" alt="">
+                    <p>Fatima Benjelloun</p>
+                </label>
+                <label for="item-2" class="card" id="photo-2">
+                    <img src="images/artist2.png" alt="">
+                    <p>Youssef Belhaj</p>
+                </label>
+                <label for="item-3" class="card" id="photo-3">
+                    <img src="images/artist3.png" alt="">
+                    <p>Ahmed Chaoui</p>
+                </label>
+                <label for="item-4" class="card" id="photo-4">
+                    <img src="images/artist4.png" alt="">
+                    <p>Hassan El Haddad</p>
+                </label>
+                <label for="item-5" class="card" id="photo-5">
+                    <img src="images/artist5.png" alt="">
+                    <p>Nour Alami</p>
+                </label>
+            </div>
+        </section>
+
+        <section class="faq">
+            <hr class="line">
+            <h2 class="faq-title">FAQ</h2>
+            <div class="row">
+                <div class="col-5 accordion-bg">
+                    <div class="more accordion">
+                        <p>Qu'est-ce que le Musée de la Poterie ?</p>
+                        <button class="accordion rotate" onclick="rotateButton(this)"><img src="images/arrow-down.png"
+                                alt=""></button>
+                    </div>
+                    <div class="panel">
+                        <hr class="panel-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 accordion-bg">
+                    <div class="more accordion">
+                        <p>Qu'est-ce que le Musée de la Poterie ?</p>
+                        <button class="accordion rotate" onclick="rotateButton(this)"><img src="images/arrow-down.png"
+                                alt=""></button>
+                    </div>
+                    <div class="panel">
+                        <hr class="panel-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 accordion-bg">
+                    <div class="more accordion">
+                        <p>Qu'est-ce que le Musée de la Poterie ?</p>
+                        <button class="accordion rotate" onclick="rotateButton(this)"><img src="images/arrow-down.png"
+                                alt=""></button>
+                    </div>
+                    <div class="panel">
+                        <hr class="panel-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 accordion-bg">
+                    <div class="more accordion">
+                        <p>Qu'est-ce que le Musée de la Poterie ?</p>
+                        <button class="accordion rotate" onclick="rotateButton(this)"><img src="images/arrow-down.png"
+                                alt=""></button>
+                    </div>
+                    <div class="panel">
+                        <hr class="panel-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 accordion-bg">
+                    <div class="more accordion">
+                        <p>Qu'est-ce que le Musée de la Poterie ?</p>
+                        <button class="accordion rotate" onclick="rotateButton(this)"><img src="images/arrow-down.png"
+                                alt=""></button>
+                    </div>
+                    <div class="panel">
+                        <hr class="panel-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5 accordion-bg">
+                    <div class="more accordion">
+                        <p>Qu'est-ce que le Musée de la Poterie ?</p>
+                        <button class="accordion rotate" onclick="rotateButton(this)"><img src="images/arrow-down.png"
+                                alt=""></button>
+                    </div>
+                    <div class="panel">
+                        <hr class="panel-line">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <footer>
+            <section class="footer-bg">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="galerie.html">Galerie</a></li>
+                            <li><a href="ateliers.html">Ateliers</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-content">
+                        <p>CONTACT</p>
+                        <p>Rue Al Medina El Mounawara, Safi</p>
+                        <p style="text-decoration: underline;">Tel:020 7131 3535</p>
+                    </div>
+
+                    <div class="logo">
+                        <a href="index.html"><img
+                                src="images/png/mucem-high-resolution-logo-white-on-transparent-background.png"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="rights">
+                    &copy; 2023 MECUM Limited. All Rights Reserved.
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
