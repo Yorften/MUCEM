@@ -1,55 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div id="outerWrapper">
-        <header class="header-section">
-            <a href="index.html"><img src="images/png/logo-no-background.png" alt=""></a>
-            <div class="header-items">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a class="active" href="galerie.html">Galerie</a></li>
-                    <li><a href="ateliers.html">Ateliers</a></li>
-                </ul>
+      <header class="header-section">
+        <a href="index.html"
+          ><img src="images/png/logo-no-background.png" alt=""
+        /></a>
+        <div class="header-items">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a class="active" href="galerie.html">Galerie</a></li>
+            <li><a href="ateliers.html">Ateliers</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 title3">
+          <h1>Galerie</h1>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="galerie-bg">
+        <div class="row galerie-container">
+          <div class="col-4"><img src="images/galerie1.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie5.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie9.jpg" alt="" /></div>
+        </div>
+        <div class="row galerie-container">
+          <div class="col-4"><img src="images/galerie2.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie6.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie10.jpg" alt="" /></div>
+        </div>
+        <div class="row galerie-container show">
+          <div class="col-4"><img src="images/galerie3.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie7.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie11.jpg" alt="" /></div>
+        </div>
+        <div class="row galerie-container show">
+          <div class="col-4"><img src="images/galerie4.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie8.jpg" alt="" /></div>
+          <div class="col-4"><img src="images/galerie12.jpg" alt="" /></div>
+        </div>
+        <button id="loadMoreButton" class="show-more" onclick="loadMore()">
+          Afficher Plus
+        </button>
+        <button
+          id="loadLessButton"
+          class="show-more"
+          onclick="loadLess()"
+          style="display: none"
+        >
+          Afficher Moins
+        </button>
+      </div>
+      <div class="collections title3">
+        <h2>Collections</h2>
+        <h3 class="sub-title"> Collection1 1919 - 1958  </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit adipisci nam, explicabo accusamus quas voluptate reiciendis placeat pariatur ad, recusandae non perferendis repellendus excepturi, debitis dolorum. Non maxime consequuntur velit.</p>
+      </div>
+      <div class="collection1"></div>
+      <div class="collections title3">
+        <h2>Collections</h2>
+        <h3 class="sub-title"> Collection2 1958 - 1990  </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit adipisci nam, explicabo accusamus quas voluptate reiciendis placeat pariatur ad, recusandae non perferendis repellendus excepturi.</p>
+      </div>
+      <div class="collection2"></div>
+      <footer>
+        <section class="footer-bg">
+          <div class="footer-container">
+            <div class="footer-content">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="ateliers.html">Ateliers</a></li>
+              </ul>
             </div>
-        </header>
+            <div class="footer-content">
+              <p>CONTACT</p>
+              <p>Rue Al Medina El Mounawara, Safi</p>
+              <p style="text-decoration: underline">Tel:020 7131 3535</p>
+            </div>
 
-        <footer>
-            <section class="footer-bg">
-                <div class="footer-container">
-                    <div class="footer-content">
-                        <ul>
-                            <li><a href="index.html">Accueil</a></li>
-                            <li><a href="galerie.html">Galerie</a></li>
-                            <li><a href="ateliers.html">Ateliers</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="footer-content">
-                        <p>CONTACT</p>
-                        <p>Rue Al Medina El Mounawara, Safi</p>
-                        <p style="text-decoration: underline;">Tel:020 7131 3535</p>
-                    </div>
-
-                    <div class="logo">
-                        <a href="index.html"><img
-                                src="images/png/mucem-high-resolution-logo-white-on-transparent-background.png"
-                                alt=""></a>
-                    </div>
-                </div>
-                <div class="rights">
-                    &copy; 2023 MECUM Limited. All Rights Reserved.
-                </div>
-            </section>
-        </footer>
+            <div class="logo">
+              <a href="index.html"
+                ><img
+                  src="images/png/mucem-high-resolution-logo-white-on-transparent-background.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="rights">
+            &copy; 2023 MECUM Limited. All Rights Reserved.
+          </div>
+        </section>
+      </footer>
     </div>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
