@@ -18,7 +18,7 @@ function autoLoopCarousel() {
 
 setInterval(autoLoopCarousel, 4000);
 
-/*---------------------------------------------------------------------*/
+/*-------------------------------------------*/
 
 let isRotated = false;
 
@@ -39,6 +39,8 @@ function rotateButton(button) {
   }
 }
 
+/*-------------------------------------------*/
+
 const loadMoreButton = document.getElementById("loadMoreButton");
 const loadLessButton = document.getElementById("loadLessButton");
 const rowsToShow = document.querySelectorAll(".galerie-container.show");
@@ -47,7 +49,7 @@ let isShowingAll = false;
 
 function loadMore() {
   rowsToShow.forEach((row) => {
-    row.style.maxHeight = "684px"; // Adjust the value for desired max height
+    row.style.maxHeight = "684px"; 
   });
   loadMoreButton.style.display = "none";
   loadLessButton.style.display = "block";
@@ -67,3 +69,10 @@ if (rowsToShow.length === 0) {
   loadMoreButton.style.display = "none";
   loadLessButton.style.display = "none";
 }
+
+/*-------------------------------------------*/
+
+
+
+    // Get a reference to the reserve element
+   

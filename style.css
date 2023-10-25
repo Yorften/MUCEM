@@ -89,6 +89,7 @@ body {
   background: url(images/artist.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
   height: 80vh;
 }
 
@@ -677,7 +678,7 @@ input[type="radio"] {
 .reserve.is-hovered + .form {
   transform: translateY(0);
 }
-
+  
 .register {
   display: flex;
   flex-direction: column;

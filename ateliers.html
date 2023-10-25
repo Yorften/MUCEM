@@ -43,8 +43,11 @@
         <div class="col-4 collection4"></div>
         <div class="col-2"></div>
         <div class="col-6 artist atelier-welcome">
-            <h2>Ahmed Benmessaoud</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, debitis blanditiis soluta esse voluptate.</h3>
+          <h2>Ahmed Benmessaoud</h2>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            debitis blanditiis soluta esse voluptate.
+          </h3>
         </div>
       </div>
       <div class="row atelier">
@@ -65,7 +68,7 @@
           <h2>Réservez votre place maintenant</h2>
         </div>
       </div>
-      <div class="form" id="form-section">
+      <div class="form error" id="form-section">
         <form>
           <div class="row">
             <div class="col-1"></div>
@@ -117,14 +120,12 @@
       </footer>
     </div>
     <script>
-      // Get a reference to the reserve element
       var reserveElement = document.querySelector(".reserve");
 
-      // Add an event listener to detect when the reserve element is hovered over
       reserveElement.addEventListener("mouseenter", function () {
-        // Add a class to indicate that the reserve element is being hovered over
         reserveElement.classList.add("is-hovered");
       });
+
 
       const hamburger = document.querySelector(".hamburger");
       const navmenu = document.querySelector(".nav-menu");
@@ -134,5 +135,6 @@
         navmenu.classList.toggle("active");
       });
     </script>
+    <script src="validator.js"></script>
   </body>
 </html>
