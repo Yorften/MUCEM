@@ -919,6 +919,10 @@ input[type="email"] {
   header {
     height: 101.33px;
   }
+  .name{
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* Responsive */
