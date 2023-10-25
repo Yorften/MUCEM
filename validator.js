@@ -107,7 +107,9 @@ function validateForm() {
     }
   }
 
-  if ((nameErr || lastErr || emailErr || phoneErr || cinErr) == true) {
+  if ((nameErr && lastErr && emailErr && phoneErr && cinErr) == false) {
+    return true;
+  }else{
     return false;
   }
 }
