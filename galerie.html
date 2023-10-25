@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/png/mucem-website-favicon---color.png"
+    />
+    <title>MUCEM - Galerie</title>
   </head>
 
   <body>
     <div id="outerWrapper">
       <header class="header-section">
-        <a href="index.html"
-          ><img src="images/png/logo-no-background.png" alt=""
-        /></a>
-        <div class="header-items">
-          <ul>
+        <nav class="navbar">
+          <a href="index.html"
+            ><img src="images/png/logo-no-background.png" alt=""
+          /></a>
+          <ul class="nav-menu">
             <li><a href="index.html">Accueil</a></li>
-            <li><a class="active" href="galerie.html">Galerie</a></li>
+            <li><a class="on" href="galerie.html">Galerie</a></li>
             <li><a href="ateliers.html">Ateliers</a></li>
           </ul>
-        </div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
       </header>
       <div class="row">
         <div class="col-3"></div>
@@ -63,14 +74,22 @@
       </div>
       <div class="collections title3">
         <h2>Collections</h2>
-        <h3 class="sub-title"> Collection1 1919 - 1958  </h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit adipisci nam, explicabo accusamus quas voluptate reiciendis placeat pariatur ad, recusandae non perferendis repellendus excepturi, debitis dolorum. Non maxime consequuntur velit.</p>
+        <h3 class="sub-title">Collection1 1919 - 1958</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+          adipisci nam, explicabo accusamus quas voluptate reiciendis placeat
+          pariatur ad, recusandae non perferendis repellendus excepturi, debitis
+          dolorum. Non maxime consequuntur velit.
+        </p>
       </div>
       <div class="collection1"></div>
       <div class="collections title3">
-        <h2>Collections</h2>
-        <h3 class="sub-title"> Collection2 1958 - 1990  </h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit adipisci nam, explicabo accusamus quas voluptate reiciendis placeat pariatur ad, recusandae non perferendis repellendus excepturi.</p>
+        <h3 class="sub-title">Collection2 1958 - 1990</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+          adipisci nam, explicabo accusamus quas voluptate reiciendis placeat
+          pariatur ad, recusandae non perferendis repellendus excepturi.
+        </p>
       </div>
       <div class="collection2"></div>
       <footer>
@@ -104,5 +123,14 @@
       </footer>
     </div>
     <script src="script.js"></script>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navmenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navmenu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

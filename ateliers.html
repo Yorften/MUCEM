@@ -5,25 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/png/mucem-website-favicon---color.png"
+    />
+    <title>MUCEM - Ateliers</title>
   </head>
 
   <body>
     <div id="outerWrapper">
       <header class="header-section">
-        <a href="index.html"
-          ><img src="images/png/logo-no-background.png" alt=""
-        /></a>
-        <div class="header-items">
-          <ul>
+        <nav class="navbar">
+          <a href="index.html"
+            ><img src="images/png/logo-no-background.png" alt=""
+          /></a>
+          <ul class="nav-menu">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="galerie.html">Galerie</a></li>
-            <li><a class="active" href="ateliers.html">Ateliers</a></li>
+            <li><a class="on" href="ateliers.html">Ateliers</a></li>
           </ul>
-        </div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
       </header>
 
       <div class="row atelier">
-        .col-
+        <div class="col-12 atelier-welcome">
+          <h2>L'ATELIER DE LA SEMAINE</h2>
+          <h3>Ahmed Benmessaoud Fait Son Débuts Au Musée Mucem</h3>
+        </div>
+      </div>
+      <div class="collection3"></div>
+      <div class="row atelier">
+        <div class="col-5"></div>
+        <div class="col-2 atelier-horaire">
+          <h2>HORAIRE</h2>
+        </div>
+      </div>
+      <div class="row atelier">
+        <div class="col-3"></div>
+        <div class="col-6 atelier-horaire">
+          <h3>Samedi: 09:00 - 17:00</h3>
+          <p>Rue Al Medina El Mounawara, Safi</p>
+        </div>
+      </div>
+      <div class="row atelier reserve">
+        <div class="col-12 atelier-reserve">
+          <h2>Réservez votre place maintenant</h2>
+        </div>
+      </div>
+      <div class="form" id="form-section">
+        <form>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <div class="register">
+                <div class="name">
+                  <input type="text" placeholder="Nom" />
+                  <input type="text" placeholder="Prénom" />
+                </div>
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Téléphone" />
+                <input type="text" placeholder="CIN" />
+                <button class="submit">Envoyer</button>
+              </div>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </form>
       </div>
 
       <footer>
@@ -56,5 +109,23 @@
         </section>
       </footer>
     </div>
+    <script>
+      // Get a reference to the reserve element
+      var reserveElement = document.querySelector(".reserve");
+
+      // Add an event listener to detect when the reserve element is hovered over
+      reserveElement.addEventListener("mouseenter", function () {
+        // Add a class to indicate that the reserve element is being hovered over
+        reserveElement.classList.add("is-hovered");
+      });
+
+      const hamburger = document.querySelector(".hamburger");
+      const navmenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navmenu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

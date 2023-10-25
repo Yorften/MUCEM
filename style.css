@@ -76,14 +76,34 @@ body {
   height: 80vh;
 }
 
+.collection3 {
+  background-image: url(images/galerie3-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
 /* End of backgrounds */
 
 /* Start of header */
 
-.header-section {
+.navbar {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section {
   color: white;
   background: black;
 }
@@ -92,17 +112,13 @@ body {
   object-fit: contain;
   width: 90px;
   height: 90px;
-  margin-left: 50px;
+  margin-left: 20px;
   padding-top: 3%;
 }
 
-ul {
-  padding: 0;
-}
-
 .header-section li {
-  display: inline-block;
   margin-right: 10vh;
+  list-style: none;
 }
 
 .header-section li:hover {
@@ -125,8 +141,23 @@ a:active {
   text-decoration: none;
 }
 
-.header-section .active {
+.header-section .on {
   color: #1638ef;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 /* End of header */
@@ -561,7 +592,122 @@ input[type="radio"] {
 
 /* Start of ateliers page */
 
+.atelier {
+  width: 90%;
+  margin: auto;
+}
 
+.atelier-welcome h2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: clamp(16px, 3vw, 32px);
+  margin: 5% 0;
+  letter-spacing: 5px;
+}
+
+.atelier-welcome h3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Podkova", sans-serif;
+  font-weight: bolder;
+  font-size: clamp(16px, 2vw, 32px);
+  margin-bottom: 5%;
+  letter-spacing: 3px;
+}
+
+.atelier-horaire,
+.atelier-reserve {
+  text-align: center;
+  font-family: Poppins;
+}
+
+.atelier-horaire h2 {
+  font-size: clamp(16px, 2vw, 32px);
+  margin-bottom: 5%;
+  margin-top: 50%;
+  letter-spacing: 5px;
+}
+
+.atelier-horaire h3 {
+  font-size: clamp(16px, 2vw, 32px);
+  margin-bottom: 5%;
+  letter-spacing: 10px;
+}
+
+.atelier-horaire p {
+  font-size: clamp(12px, 2vw, 16px);
+  margin-bottom: 5%;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+
+.atelier-reserve h2 {
+  font-size: clamp(16px, 3vw, 32px);
+  margin-bottom: 5%;
+  letter-spacing: 10px;
+}
+
+.reserve {
+  margin-top: 10%;
+}
+
+.form {
+  transform: translateY(100%);
+  transition: transform 1s ease-out;
+}
+
+.reserve.is-hovered + .form {
+  transform: translateY(0);
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name {
+  display: flex;
+  gap: 2%;
+}
+
+.name input {
+  width: 100%;
+}
+
+.submit {
+  background-color: #0075ff;
+  border-radius: 15px;
+  border-color: #0075ff;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  font: 400 14px "Poppins", sans-serif;
+  text-align: center;
+  margin: 5% 0;
+  align-self: center;
+}
+
+input::placeholder {
+  color: #666666;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: clamp(16px, 2vw, 32px);
+  letter-spacing: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(16px, 2vw, 32px);
+  padding: 20px 10px;
+  border-radius: 15px;
+  line-height: 28px;
+}
 
 /* End of ateliers page */
 
@@ -644,11 +790,7 @@ input[type="radio"] {
   }
 
   .header-section img {
-    margin-left: 20px;
-  }
-
-  .header-items ul {
-    margin-left: 60%;
+    margin-left: 0;
   }
 
   .footer-container {
@@ -692,6 +834,52 @@ input[type="radio"] {
   }
   .faq .col-2 {
     padding: 0;
+  }
+  .atelier-welcome {
+    text-align: center;
+  }
+  .atelier-horaire h2 {
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 20px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 101.33px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-menu li {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .navbar {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+  }
+  header {
+    height: 101.33px;
   }
 }
 
