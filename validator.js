@@ -9,7 +9,6 @@ function validateForm() {
   var number = document.Form.number.value;
   var cin = document.Form.cin.value;
 
-
   var nameErr = (lastErr = emailErr = phoneErr = cinErr = true);
 
   if ((name == "") | (name == null)) {
@@ -55,7 +54,10 @@ function validateForm() {
   } else {
     var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/;
     if (regex.test(email) === false) {
-      printError("emailErr", "Veuillez entrez un email valide (example@exmple.ma).");
+      printError(
+        "emailErr",
+        "Veuillez entrez un email valide (example@exmple.ma)."
+      );
       var elem = document.getElementById("email");
       elem.classList.add("input-2");
     } else {
@@ -73,7 +75,7 @@ function validateForm() {
   } else {
     var regex = /^\d{10}$/;
     if (regex.test(number) === false) {
-      printError("phoneErr", "Veuillez entrez un nombre valide. (10 nombres");
+      printError("phoneErr", "Veuillez entrez un nombre valide. (10 nombres)");
       var elem = document.getElementById("number");
       elem.classList.add("input-2");
     } else {
@@ -91,7 +93,10 @@ function validateForm() {
   } else {
     var regex = /^(?=[A-Z]{1,2}[0-9]{5,7}$).{1,8}$/;
     if (regex.test(cin) === false) {
-      printError("cinErr", "Veuillez entrez un CIN valide. (X1234567, XX123456, ...)");
+      printError(
+        "cinErr",
+        "Veuillez entrez un CIN valide. (X1234567, XX123456, ...)"
+      );
       var elem = document.getElementById("cin");
       elem.classList.add("input-2");
     } else {
@@ -102,8 +107,7 @@ function validateForm() {
     }
   }
 
-  if((nameErr || lastErr || emailErr || phoneErr || cinErr) == true){
+  if ((nameErr || lastErr || emailErr || phoneErr || cinErr) == true) {
     return false;
   }
-
 }
