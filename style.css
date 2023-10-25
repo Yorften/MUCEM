@@ -690,8 +690,19 @@ input[type="radio"] {
   gap: 2%;
 }
 
-.name input {
+.box input {
   width: 100%;
+}
+
+.name .box{
+  width: 100%;
+}
+
+.error{
+  color: red;
+  font-family: Poppins;
+  padding-left: 50px;
+  padding-top: 5px;
 }
 
 .submit {

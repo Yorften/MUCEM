@@ -69,19 +69,34 @@
         </div>
       </div>
       <div class="forms error" id="form-section">
-        <form id="form">
+        <form name="Form" id="form" onsubmit="return validateForm()">
           <div class="row">
             <div class="col-1"></div>
             <div class="col-10">
               <div class="register">
                 <div class="name">
-                  <input id="name" type="text" placeholder="Nom" />
-                  <input id="last-name" type="text" placeholder="Prénom" />
+                    <div class="box">
+                        <input id="name" name="name" type="text" placeholder="Nom" required />
+                        <div class="error" id="nameErr"></div>
+                    </div>
+                    <div class="box">
+                        <input id="last-name" name="last-name" type="text" placeholder="Prénom" required/>
+                        <div class="error" id="lastErr"></div>
+                    </div>
                 </div>
-                <input id="email" type="email" placeholder="Email" />
-                <input id="number" type="text" placeholder="Téléphone" />
-                <input id="cin" type="text" placeholder="CIN" />
-                <button class="submit">Envoyer</button>
+                <div class="box">
+                    <input id="email" name="email" type="email" placeholder="Email" required/>
+                    <div class="error" id="emailErr"></div>
+                </div>
+                <div class="box">
+                    <input id="number" name="number" type="text" placeholder="Téléphone" maxlength="10" required/>
+                    <div class="error" id="phoneErr"></div>
+                </div>
+                <div class="box">
+                    <input id="cin" type="text" placeholder="CIN" required/>
+                    <div class="error" id="cinErr"></div>
+                </div>
+                <input class="submit" type="submit" value="Envoyer">
               </div>
             </div>
             <div class="col-1"></div>
