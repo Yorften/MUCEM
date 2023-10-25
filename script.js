@@ -18,6 +18,8 @@ function autoLoopCarousel() {
 
 setInterval(autoLoopCarousel, 4000);
 
+/*---------------------------------------------------------------------*/
+
 let isRotated = false;
 
 function rotateButton(button) {
