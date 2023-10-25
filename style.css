@@ -670,12 +670,12 @@ input[type="radio"] {
   margin-top: 10%;
 }
 
-.form {
+.forms {
   transform: translateY(100%);
   transition: transform 1s ease-out;
 }
 
-.reserve.is-hovered + .form {
+.reserve.is-hovered + .forms {
   transform: translateY(0);
 }
   
