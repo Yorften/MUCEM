@@ -738,6 +738,10 @@ input[type="email"] {
   border: solid 2px black;
 }
 
+.input-2{
+  border:solid 2px red !important;
+}
+
 /* End of ateliers page */
 
 /* Responsive */
