@@ -2,7 +2,12 @@
 
 Le Musée de la Poterie "MUCEM" de SAFI est une nouvelle destination culturelle qui célèbre l'art de la poterie dans la région d'ABDA.
 
+ # Github pages
+
+ https://yorften.github.io/MUCEM/
+
 # Figma mockups
+## Desktop
 
 ![Alt text](/images/Desktop-Home.jpg)
 
@@ -10,11 +15,16 @@ Le Musée de la Poterie "MUCEM" de SAFI est une nouvelle destination culturelle 
 
 ![Alt text](/images/Desktop-Ateliers.jpg)
 
+## Mobile
+![Alt text](/images/Phone-Home.jpg)
+
+![Alt text](/images/Phone-Galerie.jpg)
+
+![Alt text](/images/Phone-Ateliers.jpg)
+
  [Figma link](https://www.figma.com/file/BRsKzvcI5KxyHCDW5AsPmP/MUCEM?type=design&node-id=44%3A538&mode=design&t=d7TWfkF66fUktNNO-1)
 
- # Github pages
 
- https://yorften.github.io/MUCEM/
 
  # Presentation
 
