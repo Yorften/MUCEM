@@ -41,7 +41,7 @@ function validateForm() {
       elem.classList.add("input-2");
     } else {
       printError("lastErr", "");
-      nameErr = false;
+      lastErr = false;
       var elem = document.getElementById("lastname");
       elem.classList.remove("input-2");
     }
@@ -62,7 +62,7 @@ function validateForm() {
       elem.classList.add("input-2");
     } else {
       printError("emailErr", "");
-      nameErr = false;
+      emailErr = false;
       var elem = document.getElementById("email");
       elem.classList.remove("input-2");
     }
@@ -80,7 +80,7 @@ function validateForm() {
       elem.classList.add("input-2");
     } else {
       printError("phoneErr", "");
-      nameErr = false;
+      phoneErr = false;
       var elem = document.getElementById("number");
       elem.classList.remove("input-2");
     }
@@ -101,15 +101,13 @@ function validateForm() {
       elem.classList.add("input-2");
     } else {
       printError("cinErr", "");
-      nameErr = false;
+      cinErr = false;
       var elem = document.getElementById("cin");
       elem.classList.remove("input-2");
     }
   }
 
-  if ((nameErr && lastErr && emailErr && phoneErr && cinErr) == false) {
-    return true;
-  }else{
+  if ((nameErr || lastErr || emailErr || phoneErr || cinErr) == true) {
     return false;
   }
 }
