@@ -59,7 +59,7 @@ function validateForm() {
       var elem = document.getElementById("email");
       elem.classList.add("input-2");
     } else {
-      printError("nameErr", "");
+      printError("emailErr", "");
       nameErr = false;
       var elem = document.getElementById("email");
       elem.classList.remove("input-2");
@@ -77,7 +77,7 @@ function validateForm() {
       var elem = document.getElementById("number");
       elem.classList.add("input-2");
     } else {
-      printError("nameErr", "");
+      printError("phoneErr", "");
       nameErr = false;
       var elem = document.getElementById("number");
       elem.classList.remove("input-2");
@@ -95,7 +95,7 @@ function validateForm() {
       var elem = document.getElementById("cin");
       elem.classList.add("input-2");
     } else {
-      printError("nameErr", "");
+      printError("cinErr", "");
       nameErr = false;
       var elem = document.getElementById("cin");
       elem.classList.remove("input-2");
