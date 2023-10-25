@@ -923,6 +923,9 @@ input[type="email"] {
     flex-direction: column;
     gap: 20px;
   }
+  .error{
+    padding-left: 20px;
+  }
 }
 
 /* Responsive */
